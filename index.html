@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x3 Grid of Images</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item" onclick="viewImage('1.jpg')">
+            <img src="1.jpg" alt="Letter A">
+        </div>
+        <div class="grid-item" onclick="viewImage('2.jpg')">
+            <img src="2.jpg" alt="Letter B">
+        </div>
+        <div class="grid-item" onclick="viewImage('3.jpg')">
+            <img src="3.jpg" alt="Letter C">
+        </div>
+        <div class="grid-item" onclick="viewImage('4.jpg')">
+            <img src="4.jpg" alt="Letter D">
+        </div>
+        <div class="grid-item" onclick="showBirthdayMessage()">
+            <img src="5.jpg" alt="Letter E">
+        </div>
+        <div class="grid-item" onclick="viewImage('6.jpg')">
+            <img src="6.jpg" alt="Letter F">
+        </div>
+        <div class="grid-item" onclick="viewImage('7.jpg')">
+            <img src="7.jpg" alt="Letter G">
+        </div>
+        <div class="grid-item" onclick="viewImage('8.jpg')">
+            <img src="8.jpg" alt="Letter H">
+        </div>
+        <div class="grid-item" onclick="viewImage('9.jpg')">
+            <img src="9.jpg" alt="Letter I">
+        </div>
+    </div>
+
+    <!-- Modal for viewing images -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
